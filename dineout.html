@@ -1,0 +1,26 @@
+<html>
+<head>
+    <title>QGraph Web Push Demo</title>
+        <script type="text/javascript">
+          !function(q,g,r,a,p,h,js){
+            if(q.qg)return;
+            js = q.qg = function() {
+              js.callmethod ? js.callmethod.call(js, arguments) : js.queue.push(arguments);
+            };
+            js.queue = [];
+            p=g.createElement(r);p.async=!0;p.src=a;h=g.getElementsByTagName(r)[0];
+            h.parentNode.insertBefore(p,h);
+          }(window,document,'script','//cdn.qgr.ph/qgraph.ad55582957817e511c3d.js');
+        </script>
+        <script>
+            window.qg_custom_html = '<div style="background-color:yellow;width:300px;height:100px;border-radius:10px"> <span style="margin-left:10px">Yes, I want my own HTML</span> <br> <br> <span class="qg-fake-prompt-close-button" style="float:left;background-color:gray;cursor:pointer;padding:8px;border-radius:5px;margin-left:10px">No push for me</span> <span class="qg-fake-prompt-confirm-button" style="float:right;background-color:blue;cursor:pointer;padding:8px;border-radius:5px;margin-right:10px">I want push</span> </div>';
+        </script>
+</head>
+<body>
+<h1>This is QGraph Web Push Demo</h1>
+<p>
+Head over to <a href="https://qgraph.io">https://qgraph.io</a> for more details.
+</p>
+
+<body>
+</html>

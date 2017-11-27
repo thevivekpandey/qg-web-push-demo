@@ -1,17 +1,21 @@
 <html>
 <head>
     <title>QGraph Web Push Demo</title>
-        <script type="text/javascript">
-          !function(q,g,r,a,p,h,js){
-            if(q.qg)return;
-            js = q.qg = function() {
-              js.callmethod ? js.callmethod.call(js, arguments) : js.queue.push(arguments);
-            };
-            js.queue = [];
-            p=g.createElement(r);p.async=!0;p.src=a;h=g.getElementsByTagName(r)[0];
-            h.parentNode.insertBefore(p,h);
-          }(window,document,'script','//cdn.qgr.ph/qgraph.ad55582957817e511c3d.js');
-        </script>
+    <script type="text/javascript">
+      window.QGSettings = {
+        "appId": "ad55582957817e511c3d",
+        "push": {
+            "requestSelf": false,
+            "fakePrompt": false,
+            "prompt": {
+                "title": "Get Latest Updates",
+                "message": "Subscribe to notifications"
+            }
+        }
+    };
+      !function(q,g,r,a,p,h){if(q.qg)return;n=q.qg=function(){n.callmethod?n.callmethod.call(n,arguments):n.queue.push(arguments);};n.queue=[];p=g.createElement(r);p.async=!0;p.src=a;h=g.getElementsByTagName(r)[0];h.parentNode.insertBefore(p,h)}(window,document,'script','https://cdn.qgraph.io/gamma/https-qgraph.min.js');
+    qg('init',window.QGSettings);</script>
+
 </head>
 <body>
 <h1>This is QGraph Web Push Demo</h1>

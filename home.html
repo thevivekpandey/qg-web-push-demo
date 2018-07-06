@@ -1,6 +1,7 @@
 <html>
 <head>
-    <title>QGraph Web Push Demo</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<title>QGraph Web Push Demo</title>
 <script type="text/javascript">
   !function(q,g,r,a,p,h,js){
     if(q.qg)return;
@@ -10,14 +11,24 @@
     js.queue = [];
     p=g.createElement(r);p.async=!0;p.src=a;h=g.getElementsByTagName(r)[0];
     h.parentNode.insertBefore(p,h);
-  }(window,document,'script','//cdn.qgr.ph/qgraph.85aefa36f3f97d8233be.js');
+  }(window,document,'script','//cdn.qgr.ph/qgraph.ad55582957817e511c3d.js');
 </script>
 </head>
 <body>
 <h1>This is QGraph Web Push Demo</h1>
 <p>
 Head over to <a href="https://qgraph.io">https://qgraph.io</a> for more details.
-
 </p>
+
+<!--
+<script>
+$(document).ready(function(){
+    $("button").click(function(){
+        $.ajax({url: "demo_test.txt", success: function(result){
+            $("#div1").html(result);
+        }});
+    });
+});
+</script>-->
 <body>
 </html>

@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>AIQUA - Peronsalization Demo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <script src="/sdk-loader.js"></script>
+    <script src="https://cdn.qgr.ph/qgraph-wp-1.js"></script>
+  </head>
+  <body>
+    <h1>Peronsalization Demo</h1>
+    <h2>Hey! <span qg-tag="characteristic-title">folks<span></h2>
+
+    <img src="/images/half-water.webp" />
+
+    <div>
+      <label><input name="ans" type="radio" value="optimist"/> A - Half Full?</label>
+      <label><input name="ans" type="radio" value="pessimist"/> B - Half empty?</label>
+      <label><input name="ans" type="radio" value="alchoholic"/> C - Doesn't have enough ice?</label>
+    </div>
+    <button id="submit">Submit</button>
+
+    <script type="text/javascript">
+      const submitBtn = document.getElementById('submit');
+      submitBtn.addEventListener('click', () => {
+        const ans = [...document.querySelectorAll('[name=ans]')].find(elem => elem.checked);
+        qg('identify', { insight: ans.value });
+      });
+    </script>
+  </body>
+</html>
+

@@ -14,7 +14,7 @@ window.QGSettings = {
      "secondsBetweenPrompts": 3600
   },
   "qgendpoint": "https://cjiestest.qgr.ph/notify.html", 
-  "appId": "3a9db504e04bbc839a3c"
+  "appId": "09da3831338b13632e44"
 };
 if(window.qg && window.qg.queue) {
    window.qg.queue.unshift(('init', QGSettings));

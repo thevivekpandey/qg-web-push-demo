@@ -1,6 +1,5 @@
 window.QGSettings = {
-  "debug": false,
-  "origin": "https://www.appier.com",
+  "debug": true,
   "push": {
      "delay": 0, 
      "requestSelf": false, 
@@ -11,7 +10,7 @@ window.QGSettings = {
         "showOverlay": true, 
         "htmlBody": "asd"
      }, 
-     "secondsBetweenPrompts": 3600
+     "secondsBetweenPrompts": 10
   },
   "qgendpoint": "https://cjiestest.qgr.ph/notify.html", 
   "appId": "09da3831338b13632e44"
